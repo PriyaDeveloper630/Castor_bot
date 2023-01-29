@@ -17,7 +17,7 @@ def sample_responses(input_text):
      /Bank 
      /Doctor '''
         
-    if user_message in ("create resume"):
+    if user_message in ("create resume","resume","/resume"):
             return '''If you don't have a resume we can help you create one - You can visit these sites for building some amazing resumes with good templates to ace your resume :
                1) https://www.canva.com/templates/?query=resume
                2) https://resume.io/resume-templates
@@ -25,7 +25,7 @@ def sample_responses(input_text):
             '''
     
 
-    if user_message in ("tips", "Interview tips"):
+    if user_message in ("tips", "Interview tips","interview tips","/interview tips"):
         return '''You can see all these blogs so that to ace the interview and you never miss the chance 
 
         1) https://resources.workable.com/tutorial/how-to-ace-interview
